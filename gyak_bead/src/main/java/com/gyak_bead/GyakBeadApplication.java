@@ -17,4 +17,10 @@ public class GyakBeadApplication {
     public String nyito(){
         return "nyito";
     }
+
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
 }
