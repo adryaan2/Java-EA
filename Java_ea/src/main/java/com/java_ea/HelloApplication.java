@@ -25,6 +25,10 @@ public class HelloApplication extends Application {
         stage.setTitle("Java beadandó - Mozi adatbázis");
         stage.setScene(scene);
         stage.show();
+        EloadasDAO dao = new EloadasDAO("jdbc:mysql://localhost/eabead?user=root");
+        List<EloadasModel> lista = dao.getTopData(10);
+        for(EloadasModel m : lista)
+            System.out.println(m);
     }
 
     public static void main(String[] args) {
