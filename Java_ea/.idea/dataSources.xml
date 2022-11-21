@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="eabead@localhost" uuid="c1739629-51dd-4aca-85e5-96d6f16aaa4b">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="ac8a6a67-90a2-4ec1-8077-f55f56f8ad2d">
+      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/Adr/Documents/Egyetem/Java gyak repo/Java-gyak-bead/Java_ea/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/eabead</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>

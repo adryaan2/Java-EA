@@ -1,10 +1,17 @@
 package com.java_ea;
 
+import hibernateEntities.FilmEntity;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import util.HibernateUtil;
+
+import java.util.List;
 
 public class MainController {
     @FXML
@@ -19,6 +26,13 @@ public class MainController {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+        Session session=factory.openSession();
+        Transaction t = session.beginTransaction();
+        List<FilmEntity> filmek= session.createQuery("FROM  FilmEntity").list();
+        for(FilmEntity f : filmek)
+            System.out.println(f.getId()+" "+f.getCim());
+        t.commit();
 
     }
 

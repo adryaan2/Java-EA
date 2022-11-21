@@ -15,6 +15,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
+        <option value="hibernate-configuration-5.2" />
+        <option value="hibernate-main-5.2" />
         <option value="Class" />
       </list>
     </option>
@@ -43,8 +45,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "G:/Egyetem_2022_ősz/Java/Javaeloadbead/Java-gyak-bead/Java_ea/src/main/java/com/example/java_ea",
-    "last_opened_file_path": "C:/Users/Adr/AppData/Local/SceneBuilder/SceneBuilder.exe",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "C:/Users/Adr/Documents/Egyetem/Java gyak repo/Java-gyak-bead/Java_ea/src/main/java/hibernateEntities",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.34712642",
     "settings.editor.selected.configurable": "preferences.externalResources"
@@ -52,12 +54,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\java\hibernateEntities" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\META-INF" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\com\java_ea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\java" />
+      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\META-INF" />
       <recent name="G:\Egyetem_2022_ősz\Java\Javaeloadbead\Java-gyak-bead\Java_ea\src\main\resources\com\example\java_ea\Adatb" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.java_ea" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="hibernateEntities" />
       <recent name="entities" />
     </key>
   </component>
@@ -75,7 +89,10 @@
       <workItem from="1668614986973" duration="7195000" />
       <workItem from="1668680835700" duration="5882000" />
       <workItem from="1668689862173" duration="2688000" />
-      <workItem from="1668692582611" duration="2407000" />
+      <workItem from="1668692582611" duration="7193000" />
+      <workItem from="1668699960129" duration="348000" />
+      <workItem from="1668700336939" duration="1147000" />
+      <workItem from="1668717484131" duration="1369000" />
     </task>
     <servers />
   </component>

@@ -8,4 +8,7 @@ module com.example.java_ea {
 
     opens com.java_ea to javafx.fxml;
     exports com.java_ea;
+    exports hibernateEntities;
+    exports util;
+    opens util to javafx.fxml;
 }
