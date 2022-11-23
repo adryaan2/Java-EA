@@ -95,11 +95,22 @@
       <workItem from="1668717484131" duration="1369000" />
       <workItem from="1669048449861" duration="1336000" />
       <workItem from="1669062573499" duration="2477000" />
+      <workItem from="1669144410981" duration="2763000" />
+      <workItem from="1669147583706" duration="1159000" />
+      <workItem from="1669200081953" duration="1000000" />
+      <workItem from="1669216767468" duration="4660000" />
+      <workItem from="1669227068451" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-base" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,29 +1,53 @@
 package com.java_ea;
 
 public class EloadasModel {
-    private String fCim;
-    private int fEv;
-    private String datum;
-    private int bev;
-    private String mNev;
-    private String mVaros;
+    public String fcim;
+    public int fev;
+    public String datum;
+    public int bev;
+    public String mnev;
+    public String mvaros;
 
-    public EloadasModel(String fCim, int fEv, String datum, int bev, String mNev, String mVaros) {
-        this.fCim = fCim;
-        this.fEv = fEv;
+    public EloadasModel(String fcim, int fev, String datum, int bev, String mnev, String mvaros) {
+        this.fcim = fcim;
+        this.fev = fev;
         this.datum = datum;
         this.bev = bev;
-        this.mNev = mNev;
-        this.mVaros = mVaros;
+        this.mnev = mnev;
+        this.mvaros = mvaros;
     }
 
     @Override
     public String toString() {
-        return  "fCim='" + fCim + '\'' +
-                ", fEv=" + fEv +
+        return  "fCim='" + fcim + '\'' +
+                ", fEv=" + fev +
                 ", datum='" + datum + '\'' +
                 ", bev=" + bev +
-                ", mNev='" + mNev + '\'' +
-                ", mVaros='" + mVaros + '\'';
+                ", mNev='" + mnev + '\'' +
+                ", mVaros='" + mvaros + '\'';
+    }
+
+    public String getFcim() {
+        return fcim;
+    }
+
+    public int getFev() {
+        return fev;
+    }
+
+    public String getDatum() {
+        return datum;
+    }
+
+    public int getBev() {
+        return bev;
+    }
+
+    public String getMnev() {
+        return mnev;
+    }
+
+    public String getMvaros() {
+        return mvaros;
     }
 }

@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class EloadasDAO {
     private Connection conn;
 
-    public EloadasDAO(String url) {
+    public EloadasDAO() {
         try {
-            conn= DriverManager.getConnection(url);
+            conn= DriverManager.getConnection("jdbc:mysql://localhost/eabead?user=root");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
