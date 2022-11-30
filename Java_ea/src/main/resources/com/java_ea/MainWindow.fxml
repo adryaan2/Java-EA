@@ -20,6 +20,9 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Rest1">
           <items>
+                  <MenuItem mnemonicParsing="false" text="Create" />
+                  <MenuItem mnemonicParsing="false" text="Read" />
+                  <MenuItem mnemonicParsing="false" text="Update" />
             <MenuItem mnemonicParsing="false" text="Delete" />
           </items>
         </Menu>
@@ -44,8 +47,8 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Egyéb">
           <items>
-            <MenuItem mnemonicParsing="false" text="Párhuzamos" />
-            <MenuItem mnemonicParsing="false" text="Stream" />
+            <MenuItem fx:id="parhuzamosAlmenu" mnemonicParsing="false" onAction="#parhuzamos" text="Párhuzamos" />
+            <MenuItem fx:id="streamAlmenu" mnemonicParsing="false" onAction="#stream" text="Stream" />
           </items>
         </Menu>
       </menus>

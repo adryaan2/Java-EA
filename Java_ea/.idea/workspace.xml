@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc624105-c3d0-4afa-be44-4aea4e4ca0fe" name="Changes" comment="" />
+    <list default="true" id="cc624105-c3d0-4afa-be44-4aea4e4ca0fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/EloadasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/EloadasDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/Töröl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/Töröl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Töröl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Töröl.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/java_ea/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/java_ea/MainWindow.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
         <option value="hibernate-configuration-5.2" />
         <option value="hibernate-main-5.2" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -28,30 +35,32 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HJi3UyB5rczh2VLT6vVsPWIk9l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;c1739629-51dd-4aca-85e5-96d6f16aaa4b&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;G:/Egyetem_2022_ősz/Java/Javaeloadbead/Java-gyak-bead/Java_ea/src/main/java/com/example/java_ea&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adr/Documents/Egyetem/Java gyak repo/Java-gyak-bead/Java_ea/src/main/java/hibernateEntities&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34712642&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JPA.DatabaseSchemaImportDialog": "c1739629-51dd-4aca-85e5-96d6f16aaa4b",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "G:/Egyetem_2022_ősz/Java/Javaeloadbead/Java-EA/Java_ea/src/main/java/com/java_ea",
+    "last_opened_file_path": "G:/Egyetem_2022_ősz/Java/Javaeloadbead/Java-EA/Java_ea",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34712642",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\java\hibernateEntities" />
@@ -61,11 +70,11 @@
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\com\java_ea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Egyetem_2022_ősz\Java\Javaeloadbead\Java-EA\Java_ea\src\main\resources\com\java_ea" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\java" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\META-INF" />
-      <recent name="G:\Egyetem_2022_ősz\Java\Javaeloadbead\Java-gyak-bead\Java_ea\src\main\resources\com\example\java_ea\Adatb" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.java_ea" />
@@ -100,6 +109,7 @@
       <workItem from="1669200081953" duration="1000000" />
       <workItem from="1669216767468" duration="4660000" />
       <workItem from="1669227068451" duration="2320000" />
+      <workItem from="1669816460283" duration="8928000" />
     </task>
     <servers />
   </component>

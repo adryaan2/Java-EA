@@ -51,4 +51,22 @@ public class EloadasDAO {
             System.out.println(e.getMessage());
         }
     }
+
+    public ArrayList<Integer> moziid(){
+        try{
+            ArrayList<Integer> li = new ArrayList<>();
+            Statement st = conn.createStatement();
+
+            String sql="SELECT id FROM mozi";
+            ResultSet rs = st.executeQuery(sql);
+            while(rs.next()){
+                int aktId = rs. getInt(1);
+                li.add(aktId);
+            }
+            return li;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
 }

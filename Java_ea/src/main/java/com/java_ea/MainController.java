@@ -94,6 +94,33 @@ public class MainController {
         }
     }
 
+    @FXML
+    public void parhuzamos(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxml = new FXMLLoader(Main.class.getResource("parhuzamos.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(fxml.load(), 600, 400);
+            stage.setTitle("Párhuzamos szálkezelés");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @FXML
+    public void stream(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxml = new FXMLLoader(Main.class.getResource("parhuzamos.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(fxml.load(), 600, 400);
+            stage.setTitle("Stream");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 
 }
