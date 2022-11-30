@@ -6,10 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class Parhuzamos {
-
-    public static String sz1;
-    public static String sz2;
+public class Parhuzamos{
     @FXML
     private Button btn;
 
@@ -20,118 +17,45 @@ public class Parhuzamos {
     public Label lb2;
 
     @FXML
-    void indit(ActionEvent event) throws InterruptedException{
+    void indit(ActionEvent event) {
 
-        /*
-        Platform.runLater(new Runnable() {
-
-            @Override
-            public void run() {
-                int round=0;
-                while(true){
-                    String s = "Változó";
-                    for(int i=0; i<round;i++)
-                        s+="ó";
-                    s+=" szöveg";
-                    round++;
-                    lb1.setText(s);
-                    try {
-                        Thread.sleep(2000);
-                    }catch(InterruptedException e){}
-                }
-            }
-        });
-
-             */
-        sz1=""; sz2="";
-        Loader1 t1 = new Loader1();
-        Loader2 t2 = new Loader2();
-        t1.start(); t2.start();
-        while(true){
-            lb1.setText(sz1);
-            lb2.setText(sz2);
-            Thread.sleep(500);
-        }
-
-    }
-
-    /*
-    class Loader1 extends Thread {
-
-        @Override
-
-        public void run() {
-            int round = 0;
-
-            while (true) {
-
-                String s = "Változó";
-                for(int i=0; i<round;i++)
-                    s+="ó";
-                s+=" szöveg";
-                round++;
-                lb1.setText(s);
-
+        lb1.setText("Változó");
+        lb2.setText("Változó");
+        Runnable task=()->{
+            int round=0;
+            while(round<6) {
                 try {
-
                     Thread.sleep(1000);
-
                 } catch (InterruptedException e) {
-
-                    e.printStackTrace();
-
+                    throw new RuntimeException(e);
                 }
-
+                Platform.runLater(() -> {
+                            lb1.setText(lb1.getText() + "ó");
+                        }
+                );
+                round++;
             }
+        };
 
-        }
-    }
-    */
-
-
-
-}
-
-class Loader1 extends Thread {
-    @Override
-    public void run() {
-        int round=0;
-        while(true){
-            try{
-                Thread.sleep(2000);
-            }catch(InterruptedException e){
-                e.printStackTrace();
+        Runnable task2=()->{
+            int round=0;
+            while(round<3) {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                Platform.runLater(() -> {
+                            lb2.setText(lb2.getText() + "ó");
+                        }
+                );
+                round++;
             }
-            String s = "Változó";
-            for(int i=0; i<round;i++)
-                s+="ó";
-            s+=" szöveg";
-            round++;
-            Parhuzamos.sz1=s;
+        };
 
-        }
-
+        new Thread(task).start();
+        new Thread(task2).start();
     }
 }
 
-class Loader2 extends Thread{
-    @Override
-    public void run() {
-        int round=0;
-
-        while(true){
-            try{
-                Thread.sleep(1000);
-            }catch(Exception e){
-
-            }
-            String s = "Változó";
-            for(int i=0; i<round;i++)
-                s+="ó";
-            s+=" szöveg";
-            Parhuzamos.sz2=s;
-            round++;
-        }
-    }
-}
 

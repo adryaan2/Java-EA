@@ -99,7 +99,7 @@ public class MainController {
         try{
             FXMLLoader fxml = new FXMLLoader(Main.class.getResource("parhuzamos.fxml"));
             Stage stage = new Stage();
-            Scene scene = new Scene(fxml.load(), 600, 400);
+            Scene scene = new Scene(fxml.load(), 600, 330);
             stage.setTitle("Párhuzamos szálkezelés");
             stage.setScene(scene);
             stage.show();
