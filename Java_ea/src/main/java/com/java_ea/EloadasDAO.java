@@ -38,20 +38,6 @@ public class EloadasDAO {
         }
     }
 
-    void kiir(){
-        try{
-            Statement st = conn.createStatement();
-            String sql="SELECT cim, ev, datum, bevetel, nev, varos FROM (film INNER JOIN eloadas ON film.id=filmid) INNER JOIN mozi ON mozi.id=moziid LIMIT 10";
-            ResultSet rs = st.executeQuery(sql);
-            rs.next();
-            EloadasModel ea =
-                    new EloadasModel(rs.getString(1),rs.getInt(2),rs.getString(3), rs.getInt(4), rs.getString(5), rs.getString(6));
-            System.out.println(ea);
-        }catch(SQLException e){
-            System.out.println(e.getMessage());
-        }
-    }
-
     public ArrayList<Integer> moziid(){
         try{
             ArrayList<Integer> li = new ArrayList<>();
@@ -109,6 +95,18 @@ public class EloadasDAO {
         }
     }
 
+    public boolean modositMozi(int ID, String nev, String varos, int ferohely) throws SQLException {
+        try{
+            Statement st = conn.createStatement();
+            String sql=String.format("UPDATE mozi SET nev='%s', varos='%s', ferohely='%d' WHERE id=%d",nev, varos, ferohely, ID);
+            st.executeUpdate(sql);
+            return true;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            throw e;
+        }
+    }
+
     public ArrayList<EloadasModel> getAllData(){
         try{
             ArrayList<EloadasModel> li = new ArrayList<>();
@@ -127,6 +125,22 @@ public class EloadasDAO {
                 li.add(ea);
             }
             return li;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public MoziEntity getMoziById(int ID){
+        try{
+            Statement st = conn.createStatement();
+            String sql="SELECT * FROM mozi WHERE id="+ID;
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            String nev = rs.getString("nev");
+            String varos = rs.getString("varos");
+            int ferohely=rs.getInt("ferohely");
+            return new MoziEntity(ID, nev, varos, ferohely);
         }catch(SQLException e){
             System.out.println(e.getMessage());
             return null;

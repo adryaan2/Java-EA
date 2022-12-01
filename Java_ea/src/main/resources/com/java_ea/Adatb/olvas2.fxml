@@ -21,7 +21,7 @@
    <children>
       <HBox fillHeight="false" layoutX="19.0" layoutY="10.0" prefHeight="650.0" prefWidth="826.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
          <children>
-            <TableView fx:id="table" prefWidth="600.0">
+            <TableView fx:id="table" prefHeight="623.0" prefWidth="600.0">
                <columns>
                   <TableColumn fx:id="fcim" prefWidth="75.0" text="Film címe" />
                   <TableColumn fx:id="fev" prefWidth="75.0" text="Film éve" />
@@ -76,7 +76,7 @@
                      </toggleGroup>
                   </RadioButton>
                   <RadioButton fx:id="radioMasodikFelev" mnemonicParsing="false" text="Év második felében" toggleGroup="$felev" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
-                  <CheckBox fx:id="checkBox7000" mnemonicParsing="false" text="7000-nél nagyobb bevétel" GridPane.rowIndex="6" />
+                  <CheckBox fx:id="checkBox7000" mnemonicParsing="false" text="70000-nél nagyobb bevétel" GridPane.rowIndex="6" />
                   <ComboBox fx:id="comboVaros" prefWidth="150.0" GridPane.rowIndex="3" />
                </children>
                <padding>

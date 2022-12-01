@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.java_ea.Módosít"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java_ea.Módosít">
+   <children>
+      <Label layoutX="183.0" layoutY="27.0" text="Egy mozi adatainak módosítása" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="67.0" layoutY="55.0" prefHeight="241.0" prefWidth="495.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="159.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="336.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Mozi azonosítója:" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combo" onAction="#moziKivalasztva" prefWidth="150.0" GridPane.rowIndex="1" />
+            <Label text="Mozi neve:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Város:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Férőhelyek száma:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="6.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="tfNev" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfVaros" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfFerohely" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="btn" mnemonicParsing="false" onAction="#ment" text="Mentés" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
 </AnchorPane>

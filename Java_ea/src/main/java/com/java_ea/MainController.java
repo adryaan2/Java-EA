@@ -31,7 +31,7 @@ public class MainController {
             FXMLLoader fxml = new FXMLLoader(Main.class.getResource("Adatb/olvas2.fxml"));
             Stage stage = new Stage();
             Scene olv1scene = new Scene(fxml.load(), 800, 650);
-            stage.setTitle("Olvas2");
+            stage.setTitle("Olvas2 stream-mel");
             stage.setScene(olv1scene);
             stage.show();
         } catch (Exception e) {
@@ -98,16 +98,14 @@ public class MainController {
     @FXML
     public void stream(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxml = new FXMLLoader(Main.class.getResource("parhuzamos.fxml"));
+            FXMLLoader fxml = new FXMLLoader(Main.class.getResource("Adatb/olvas2.fxml"));
             Stage stage = new Stage();
-            Scene scene = new Scene(fxml.load(), 600, 400);
-            stage.setTitle("Stream");
-            stage.setScene(scene);
+            Scene olv1scene = new Scene(fxml.load(), 800, 650);
+            stage.setTitle("Szűrés stream-mel");
+            stage.setScene(olv1scene);
             stage.show();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
-
-
 }

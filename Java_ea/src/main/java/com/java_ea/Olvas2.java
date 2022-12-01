@@ -5,20 +5,15 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.util.*;
-import java.util.function.*;
-import java.util.stream.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -72,13 +67,15 @@ public class Olvas2 implements Initializable {
 
     @FXML
     void szuresClick(ActionEvent event) {
-        lista.addAll(dao.getAllData());
-        java.util.stream.Stream<EloadasModel> stream=lista.stream();
-        lista=null; //memória
-        //https://stackoverflow.com/questions/33849538/collectors-lambda-return-observable-list
+        ArrayList<EloadasModel> osszes = dao.getAllData();
+        java.util.stream.Stream<EloadasModel> stream=osszes.stream();
+        osszes=null; //memória
+
         if(! tfCim.getText().isBlank())
-            stream=stream.filter(x -> x.fcim.contains(tfCim.getText()));
-        stream=stream.filter(x -> x.mvaros==comboVaros.getSelectionModel().getSelectedItem());
+            stream=stream.filter(x -> x.fcim.toLowerCase().contains(tfCim.getText().toLowerCase()));
+        stream=stream.filter(x -> Objects.equals(x.mvaros, comboVaros.getSelectionModel().getSelectedItem()));
+
+
         ArrayList<String> elsoFelev = new ArrayList<String>();
         for(int i=1; i<=6; i++){
             elsoFelev.add("0"+i);
@@ -86,27 +83,24 @@ public class Olvas2 implements Initializable {
 
         ArrayList<String> masodikFelev = new ArrayList<String>();
         for(int i=7; i<=12; i++){
-            elsoFelev.add("0"+i);
+            if(i<10)
+                masodikFelev.add("0"+i);
+            else
+                masodikFelev.add(String.valueOf(i));
         }
-        if(radioElsoFelev.isArmed())
-            stream=stream.filter(x->elsoFelev.contains(x.datum.substring(5,6)));
-        if(radioMasodikFelev.isArmed())
-            stream=stream.filter(x->masodikFelev.contains(x.datum.substring(5,6)));
+
+        if(radioElsoFelev.isSelected())
+            stream=stream.filter(x->elsoFelev.contains(x.datum.substring(5,7)));
+        if(radioMasodikFelev.isSelected())
+            stream=stream.filter(x->masodikFelev.contains(x.datum.substring(5,7)));
 
         if(checkBox7000.isSelected())
-            stream=stream.filter(x -> x.bev>7000);
+            stream=stream.filter(x -> x.bev>70000);
 
-
+        //https://stackoverflow.com/questions/33849538/collectors-lambda-return-observable-list
         lista=stream.collect(Collectors.collectingAndThen(toList(), l -> FXCollections.observableArrayList(l)));
-
-        fcim.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("fcim"));
-        fev.setCellValueFactory(new PropertyValueFactory<EloadasModel, Integer>("fev"));
-        datum.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("datum"));
-        bev.setCellValueFactory(new PropertyValueFactory<EloadasModel, Integer>("bev"));
-        mnev.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("mnev"));
-        mvaros.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("mvaros"));
-
         table.setItems(lista);
+
     }
 
     @Override
@@ -114,6 +108,12 @@ public class Olvas2 implements Initializable {
         dao = new EloadasDAO();
         lista = FXCollections.observableArrayList();
 
+        fcim.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("fcim"));
+        fev.setCellValueFactory(new PropertyValueFactory<EloadasModel, Integer>("fev"));
+        datum.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("datum"));
+        bev.setCellValueFactory(new PropertyValueFactory<EloadasModel, Integer>("bev"));
+        mnev.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("mnev"));
+        mvaros.setCellValueFactory(new PropertyValueFactory<EloadasModel, String>("mvaros"));
         List<String> varosok =
                 dao.getAllData().stream()
                         .map(EloadasModel::getMvaros)
@@ -122,5 +122,6 @@ public class Olvas2 implements Initializable {
                         .collect(Collectors.toList());
         comboVaros.getItems().addAll(varosok);
         comboVaros.setValue(varosok.get(0));
+        table.setItems(lista);
     }
 }
