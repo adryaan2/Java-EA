@@ -1,27 +1,23 @@
-package com.java_ea.entities_sajat;
+package com.java_ea;
 
-import javax.persistence.*;
+public class MoziEntity {
 
-
-@Entity
-public class Mozi {
-    @Column @Id
     public int id;
-    @Column
+
     public String nev;
-    @Column
+
     public String varos;
-    @Column
+
     public int ferohely;
 
-    public Mozi(int id, String nev, String varos, int ferohely) {
+    public MoziEntity(int id, String nev, String varos, int ferohely) {
         this.id = id;
         this.nev = nev;
         this.varos = varos;
         this.ferohely = ferohely;
     }
 
-    public Mozi() {
+    public MoziEntity() {
     }
 
     public int getId() {

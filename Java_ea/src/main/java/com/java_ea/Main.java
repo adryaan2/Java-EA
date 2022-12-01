@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 //https://gluonhq.com/products/scene-builder/#download
@@ -33,9 +34,26 @@ public class Main extends Application {
         stage.show();
 
         dao = new EloadasDAO();
-        List<EloadasModel> lista = dao.getTopData(10);
-        for(EloadasModel m : lista)
-            System.out.println(m);
+        try {
+            boolean letezik1 = dao.letezikMozi(1);
+            System.out.println(letezik1);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            boolean letezik2 = dao.letezikMozi(2);
+            System.out.println(letezik2);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("Hozzáadás:");
+        try {
+            dao.hozzaadMozi(new MoziEntity(1, "Ujmozi", "Kecskemét", 300));
+        } catch (SQLException e) {
+            System.out.println("Sikertelen hozzáadás");
+        }
+
     }
 
     public static void main(String[] args) {

@@ -69,4 +69,43 @@ public class EloadasDAO {
             return null;
         }
     }
+
+    public int torol(int ID){
+        try{
+            Statement st = conn.createStatement();
+            String sql="DELETE FROM mozi WHERE id="+ID;
+            return st.executeUpdate(sql);
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            return -111;
+        }
+    }
+
+    public boolean letezikMozi(int ID) throws SQLException{
+        try{
+            Statement st = conn.createStatement();
+            String sql="SELECT COUNT(id) FROM mozi WHERE id="+ID;
+            ResultSet rs = st.executeQuery(sql);
+            rs.next();
+            if(rs.getInt(1)>0)
+                return true;
+            return false;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            throw e;
+        }
+    }
+
+    public boolean hozzaadMozi(MoziEntity uj) throws SQLException {
+        try{
+            Statement st = conn.createStatement();
+            String sql="INSERT INTO mozi (`id`, `nev`, `varos`, `ferohely`)";
+            sql+=" VALUES ("+uj.id+", '"+uj.nev+"', '"+uj.varos+"', '"+uj.ferohely+"')";
+            st.executeUpdate(sql);
+            return true;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            throw e;
+        }
+    }
 }

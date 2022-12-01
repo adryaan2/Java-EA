@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc624105-c3d0-4afa-be44-4aea4e4ca0fe" name="Changes" comment="" />
+    <list default="true" id="cc624105-c3d0-4afa-be44-4aea4e4ca0fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/MoziEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/EloadasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/EloadasDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/Töröl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/Töröl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_ea/Ír.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_ea/Ír.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Töröl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Torol.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Ír.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/java_ea/Adatb/Ír.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../entities_sajat/Mozi.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,11 +74,11 @@
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\com\java_ea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Egyetem_2022_ősz\Java\Javaeloadbead\Java-EA\Java_ea\src\main\java\com\java_ea" />
       <recent name="G:\Egyetem_2022_ősz\Java\Javaeloadbead\Java-EA\Java_ea\src\main\resources\com\java_ea" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main" />
       <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\java" />
-      <recent name="C:\Users\Adr\Documents\Egyetem\Java gyak repo\Java-gyak-bead\Java_ea\src\main\resources\META-INF" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.java_ea" />
@@ -104,6 +115,7 @@
       <workItem from="1669227068451" duration="2320000" />
       <workItem from="1669816460283" duration="8928000" />
       <workItem from="1669839188231" duration="3472000" />
+      <workItem from="1669899351706" duration="6213000" />
     </task>
     <servers />
   </component>
