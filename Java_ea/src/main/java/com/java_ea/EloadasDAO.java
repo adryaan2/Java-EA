@@ -108,4 +108,28 @@ public class EloadasDAO {
             throw e;
         }
     }
+
+    public ArrayList<EloadasModel> getAllData(){
+        try{
+            ArrayList<EloadasModel> li = new ArrayList<>();
+            Statement st = conn.createStatement();
+
+            String sql="SELECT cim, ev, datum, bevetel, nev, varos FROM (film INNER JOIN eloadas ON film.id=filmid) INNER JOIN mozi ON mozi.id=moziid";
+            ResultSet rs = st.executeQuery(sql);
+            while(rs.next()){
+                String fCim=rs.getString(1);
+                int fEv = rs. getInt(2);
+                String datum = rs.getString(3);
+                int bevetel= rs.getInt(4);
+                String mNev=rs.getString(5);
+                String mVaros=rs.getString(6);
+                EloadasModel ea = new EloadasModel(fCim,fEv,datum, bevetel, mNev, mVaros);
+                li.add(ea);
+            }
+            return li;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
 }

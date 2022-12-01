@@ -34,25 +34,6 @@ public class Main extends Application {
         stage.show();
 
         dao = new EloadasDAO();
-        try {
-            boolean letezik1 = dao.letezikMozi(1);
-            System.out.println(letezik1);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            boolean letezik2 = dao.letezikMozi(2);
-            System.out.println(letezik2);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println("Hozzáadás:");
-        try {
-            dao.hozzaadMozi(new MoziEntity(1, "Ujmozi", "Kecskemét", 300));
-        } catch (SQLException e) {
-            System.out.println("Sikertelen hozzáadás");
-        }
 
     }
 

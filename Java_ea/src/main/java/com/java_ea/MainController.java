@@ -30,7 +30,7 @@ public class MainController {
         try{
             FXMLLoader fxml = new FXMLLoader(Main.class.getResource("Adatb/olvas2.fxml"));
             Stage stage = new Stage();
-            Scene olv1scene = new Scene(fxml.load(), 600, 400);
+            Scene olv1scene = new Scene(fxml.load(), 800, 650);
             stage.setTitle("Olvas2");
             stage.setScene(olv1scene);
             stage.show();
