@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Java_ea:jar" />
+      <artifact name="LightWeight" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -52,8 +52,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "G:/Egyetem_2022_ősz/Java/Javaeloadbead/Java-EA/Java_ea/src/main/java/com/java_ea",
-    "last_opened_file_path": "C:/Program Files/JetBrains/IntelliJ IDEA 2022.2.2/plugins/javaFX/lib/javaFX.jar",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "C:/Users/Adr/.openjfx/cache/19-ea+7/amd64/vcruntime140_1.dll",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.34712642",
     "settings.editor.selected.configurable": "JavaScript.Libraries"
@@ -81,6 +81,22 @@
       <recent name="hibernateEntities" />
       <recent name="entities" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Java_ea.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Java_ea_jar2/Java_ea.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Java_ea.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Java_ea_jar/Java_ea.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Java_ea.jar (1)" />
+        <item itemvalue="JAR Application.Java_ea.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,7 +126,12 @@
       <workItem from="1669816460283" duration="8928000" />
       <workItem from="1669839188231" duration="3472000" />
       <workItem from="1669899351706" duration="12772000" />
-      <workItem from="1669920492056" duration="13254000" />
+      <workItem from="1669920492056" duration="15257000" />
+      <workItem from="1669975276058" duration="1070000" />
+      <workItem from="1670002811117" duration="8101000" />
+      <workItem from="1670015874578" duration="108000" />
+      <workItem from="1670016855523" duration="403000" />
+      <workItem from="1670017676821" duration="138000" />
     </task>
     <servers />
   </component>
